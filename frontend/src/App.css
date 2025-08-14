@@ -1,0 +1,47 @@
+/* Shift top-right toast down by 80px (adjust as needed) */
+.Toastify__toast-container--top-right {
+  top: 80px !important;
+}
+/* Floating chat help container */
+#chat-help-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 9999;
+  transition: transform 0.2s ease;
+}
+
+#chat-help-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.chat-help-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: sans-serif;
+}
+
+/* Optional: emoji bounce to attract attention */
+.chat-help-label::before {
+  content: '💬';
+  animation: bounce 2s infinite;
+  display: inline-block;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-6px); }
+  60% { transform: translateY(-3px); }
+}
